@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рабочий Обед - Меню</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .header {
+            height: 120px;
+            max-width: 1920px;
+            background-color: beige;
+            /* Цвет шапки */
+        }
+
+        .header .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .header .nav-link {
+            border: 1px solid #800000;
+            /* бордовая обводка */
+            color: #800000;
+            width: 96px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            /* Скругление кнопок */
+        }
+
+        .footer {
+            padding: 20px 0;
+            background-color: beige;
+            /* Цвет футера */
+        }
+
+        .footer p {
+            color: #800000;
+            /* Цвет текста футера */
+        }
+    </style>
+    <style>
+        .menu-section {
+            height: 900px;
+            max-width: 1920px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu-card {
+            flex: 1 1 20%;
+            max-width: 15%;
+            box-sizing: border-box;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #f8f9fa;
+            margin: 10px;
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: auto;
+            max-height: 40%;
+        }
+
+        .menu-card h3 {
+            flex: 0 0 20%;
+        }
+
+        .menu-card p {
+            flex: 0 0 20%;
+        }
+
+        .menu-card .btn-order {
+            flex: 0 0 20%;
+            background-color: #800020;
+            color: #f5f5dc;
+            border-radius: 15px;
+        }
+
+        @media (max-width: 640px) {
+            .menu-card {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header class="header d-flex align-items-center" style="background-color: #f5f5dc;">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="index.html" class="navbar-brand text-maroon">Ланч с доставкой</a>
+            <nav class="nav">
+                <a class="nav-link mx-1" href="index.html">Главная</a>
+                <a class="nav-link mx-1" href="menu.html">Меню</a>
+                <a class="nav-link mx-1" href="#galleryCarousel">Галерея</a>
+                <a class="nav-link mx-1" href="#accordionExample">Информация</a>
+                <a class="nav-link mx-1" href="contact.html">Контакты</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Контент страницы -->
+    <main class="container mt-5">
+        <section id="menu" class="menu-section">
+            <div class="menu-card">
+                <img src="static/image/kebab.jpg" alt="photo/kebab.jpg">
+                <h3>Шашлык</h3>
+                <p>200 руб</p>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+            <div class="menu-card">
+                <img src="static/image/tasty1.jpg" alt="photo/tasty1.jpg">
+                <h3>Картофель жареный с грибами</h3>
+                <p>110 руб</p>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+            <div class="menu-card">
+                <img src="static/image/uzbek-cuisine.jpg" alt="photo/uzbek-cuisine.jpg">
+                <h3>Плов</h3>
+                <p>150 руб</p>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+            <div class="menu-card">
+                <img src="static/image/sushi-rolls-maki.jpg" alt="photo/sushi-rolls-maki.jpg">
+                <h3>Суши и сеты</h3>
+                <p>180 руб</p>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+            <div class="menu-card">
+                <img src="static/image/cherries-black.jpg" alt="photo/cherries-black.jpg">
+                <h3>Вареники с вишней</h3>
+                <p>135 руб</p>
+                <button class="btn btn-order">Заказать</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer id="contactFooter" class="footer text-center">
+        <div class="container">
+            <p>ИП Фомин Е.Н.</p>
+            <p>т.+7-922-765-18-99</p>
+            <p>Контактная информация: info@example.com</p>
+            <p>Следите за нами:
+                <a href="#" class="mx-2">Facebook</a>
+                <a href="#" class="mx-2">Twitter</a>
+                <a href="#" class="mx-2">Instagram</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
