@@ -99,54 +99,55 @@
 
 <body>
     <!-- Шапка сайта -->
-    <header class="header d-flex align-items-center" style="background-color: #f5f5dc;">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="index.html" class="navbar-brand text-maroon">Ланч с доставкой</a>
-            <nav class="nav">
-                <a class="nav-link mx-1" href="index.html">Главная</a>
-                <a class="nav-link mx-1" href="menu.html">Меню</a>
-                <a class="nav-link mx-1" href="#galleryCarousel">Галерея</a>
-                <a class="nav-link mx-1" href="#accordionExample">Информация</a>
-                <a class="nav-link mx-1" href="contact.html">Контакты</a>
-            </nav>
-        </div>
-    </header>
+   <header class="header d-flex align-items-center" style="background-color: #f5f5dc;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="{{ url_for('home') }}" class="navbar-brand text-maroon">Ланч с доставкой</a>
+        <nav class="nav">
+            <a class="nav-link mx-1" href="{{ url_for('home') }}">Главная</a>
+            <a class="nav-link mx-1" href="{{ url_for('menu') }}">Меню</a>
+            <a class="nav-link mx-1" href="#galleryCarousel">Галерея</a>
+            <a class="nav-link mx-1" href="#accordionExample">Информация</a>
+            <a class="nav-link mx-1" href="{{ url_for('contact') }}">Контакты</a>
+        </nav>
+    </div>
+</header>
 
     <!-- Контент страницы -->
     <main class="container mt-5">
-        <section id="menu" class="menu-section">
-            <div class="menu-card">
-                <img src="static/image/kebab.jpg" alt="photo/kebab.jpg">
-                <h3>Шашлык</h3>
-                <p>200 руб</p>
-                <button class="btn btn-order">Заказать</button>
-            </div>
-            <div class="menu-card">
-                <img src="static/image/tasty1.jpg" alt="photo/tasty1.jpg">
-                <h3>Картофель жареный с грибами</h3>
-                <p>110 руб</p>
-                <button class="btn btn-order">Заказать</button>
-            </div>
-            <div class="menu-card">
-                <img src="static/image/uzbek-cuisine.jpg" alt="photo/uzbek-cuisine.jpg">
-                <h3>Плов</h3>
-                <p>150 руб</p>
-                <button class="btn btn-order">Заказать</button>
-            </div>
-            <div class="menu-card">
-                <img src="static/image/sushi-rolls-maki.jpg" alt="photo/sushi-rolls-maki.jpg">
-                <h3>Суши и сеты</h3>
-                <p>180 руб</p>
-                <button class="btn btn-order">Заказать</button>
-            </div>
-            <div class="menu-card">
-                <img src="static/image/cherries-black.jpg" alt="photo/cherries-black.jpg">
-                <h3>Вареники с вишней</h3>
-                <p>135 руб</p>
-                <button class="btn btn-order">Заказать</button>
-            </div>
-        </section>
-    </main>
+    <section id="menu" class="menu-section">
+        <div class="menu-card">
+            <img src="{{ url_for('static', filename='image/kebab.jpg') }}" alt="Шашлык">
+            <h3>Шашлык</h3>
+            <p>200 руб</p>
+            <button class="btn btn-order">Заказать</button>
+        </div>
+        <div class="menu-card">
+            <img src="{{ url_for('static', filename='image/tasty1.jpg') }}" alt="Картофель жареный с грибами">
+            <h3>Картофель жареный с грибами</h3>
+            <p>110 руб</p>
+            <button class="btn btn-order">Заказать</button>
+        </div>
+        <div class="menu-card">
+            <img src="{{ url_for('static', filename='image/uzbek-cuisine.jpg') }}" alt="Плов">
+            <h3>Плов</h3>
+            <p>150 руб</p>
+            <button class="btn btn-order">Заказать</button>
+        </div>
+        <div class="menu-card">
+            <img src="{{ url_for('static', filename='image/sushi-rolls-maki.jpg') }}" alt="Суши и сеты">
+            <h3>Суши и сеты</h3>
+            <p>180 руб</p>
+            <button class="btn btn-order">Заказать</button>
+        </div>
+        <div class="menu-card">
+            <img src="{{ url_for('static', filename='image/cherries-black.jpg') }}" alt="Вареники с вишней">
+            <h3>Вареники с вишней</h3>
+            <p>135 руб</p>
+            <button class="btn btn-order">Заказать</button>
+        </div>
+    </section>
+</main>
+
 
     <!-- Футер -->
     <footer id="contactFooter" class="footer text-center">

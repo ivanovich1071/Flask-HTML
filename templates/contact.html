@@ -61,17 +61,17 @@
 <body>
     <!-- Шапка сайта -->
     <header class="header d-flex align-items-center" style="background-color: #f5f5dc;">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="index.html" class="navbar-brand text-maroon">Ланч с доставкой</a>
-            <nav class="nav">
-                <a class="nav-link mx-1" href="index.html">Главная</a>
-                <a class="nav-link mx-1" href="menu.html">Меню</a>
-                <a class="nav-link mx-1" href="#galleryCarousel">Галерея</a>
-                <a class="nav-link mx-1" href="#accordionExample">Информация</a>
-                <a class="nav-link mx-1" href="contact.html">Контакты</a>
-            </nav>
-        </div>
-    </header>
+    <div class="container d-flex justify-content-between align-items-center">
+        <a href="{{ url_for('home') }}" class="navbar-brand text-maroon">Ланч с доставкой</a>
+        <nav class="nav">
+            <a class="nav-link mx-1" href="{{ url_for('home') }}">Главная</a>
+            <a class="nav-link mx-1" href="{{ url_for('menu') }}">Меню</a>
+            <a class="nav-link mx-1" href="#galleryCarousel">Галерея</a>
+            <a class="nav-link mx-1" href="#accordionExample">Информация</a>
+            <a class="nav-link mx-1" href="{{ url_for('contact') }}">Контакты</a>
+        </nav>
+    </div>
+</header>
 
     <!-- Контент страницы -->
     <main class="container mt-5">
