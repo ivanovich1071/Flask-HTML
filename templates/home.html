@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+ <main class="container mt-5">
+    <section id="menu" class="menu-section">
+        <div class="menu-card">
+            <img src="{{ url_for('static', filename='image/kebab.jpg') }}" alt="Шашлык">
+            <h3>Шашлык</h3>
+            <p>200 руб</p>
+            <button class="btn btn-order">Заказать</button>
+        </div>
+        <div class="menu-card">
+            <img src="{{ url_for('static', filename='image/tasty1.jpg') }}" alt="Картофель жареный с грибами">
+            <h3>Картофель жареный с грибами</h3>
+            <p>110 руб</p>
+            <button class="btn btn-order">Заказать</button>
+        </div>
+        <div class="menu-card">
+            <img src="{{ url_for('static', filename='image/uzbek-cuisine.jpg') }}" alt="Плов">
+            <h3>Плов</h3>
+            <p>150 руб</p>
+            <button class="btn btn-order">Заказать</button>
+        </div>
+        <div class="menu-card">
+            <img src="{{ url_for('static', filename='image/sushi-rolls-maki.jpg') }}" alt="Суши и сеты">
+            <h3>Суши и сеты</h3>
+            <p>180 руб</p>
+            <button class="btn btn-order">Заказать</button>
+        </div>
+        <div class="menu-card">
+            <img src="{{ url_for('static', filename='image/cherries-black.jpg') }}" alt="Вареники с вишней">
+            <h3>Вареники с вишней</h3>
+            <p>135 руб</p>
+            <button class="btn btn-order">Заказать</button>
+        </div>
+    </section>
+</main>
+{% endblock %}
